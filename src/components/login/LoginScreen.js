@@ -1,0 +1,23 @@
+
+
+const LoginScreen = ({ history }) => {
+
+  const handleLogin = () => {
+    history.replace('/');
+  }
+
+  return (
+    <div className="container mt-5">
+      <h1>Login</h1>
+      <hr/>
+      <button
+        className="btn btn-outline-dark"
+        onClick={ handleLogin }
+      >
+        Ingresar
+      </button>
+    </div>
+  )
+}
+
+export default LoginScreen;
