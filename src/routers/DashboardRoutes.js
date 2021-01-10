@@ -9,6 +9,7 @@ import Navbar from "../components/ui/Navbar"
 const DashboardRoutes = () => {
   return (
     <>
+    {/* history es un prop de DashboardRoutes y puede pasarse hacia Navbar */}
       <Navbar />
       <div className="container mt-5">
         <Switch>

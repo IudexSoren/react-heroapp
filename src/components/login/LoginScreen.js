@@ -1,9 +1,22 @@
+import { useContext } from "react"
+import { AuthContext } from "../../auth/AuthContext"
+import { types } from "../../types/types";
 
 
 const LoginScreen = ({ history }) => {
 
+  const { dispatch } = useContext(AuthContext);
+
   const handleLogin = () => {
-    history.replace('/');
+    const action = {
+      type: types.login,
+      payload: {
+        name: 'Aarón'
+      }
+    }
+    dispatch(action);
+    const lastPath = localStorage.getItem('lastPath') || '/';
+    history.replace(lastPath);
   }
 
   return (
@@ -14,7 +27,7 @@ const LoginScreen = ({ history }) => {
         className="btn btn-outline-dark"
         onClick={ handleLogin }
       >
-        Ingresar
+        Log In
       </button>
     </div>
   )
