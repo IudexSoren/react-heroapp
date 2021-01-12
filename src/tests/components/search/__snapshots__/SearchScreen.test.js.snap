@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de SearchScreen Debe mostrar el mensaje de error al no encontrar un héroe con los argumentos especificados en el URL 1`] = `
+<div>
+  <h1>
+    Search a hero
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find a hero"
+          type="text"
+          value="chico percebe"
+        />
+        <button
+          className="btn btn-outline-success btn-block mt-3 w-100"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 d-flex justify-content-center flex-wrap"
+    >
+      <h4
+        className="text-center w-100"
+      >
+        Results
+      </h4>
+      <hr
+        className="w-100"
+      />
+      <div
+        className="alert alert-warning w-75"
+      >
+        No results for 
+        chico percebe
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas de SearchScreen Debe mostrar un héroe y el valor del input debe basarse en el argumento de la búsqueda 1`] = `
+<div>
+  <h1>
+    Search a hero
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find a hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-success btn-block mt-3 w-100"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 d-flex justify-content-center flex-wrap"
+    >
+      <h4
+        className="text-center w-100"
+      >
+        Results
+      </h4>
+      <hr
+        className="w-100"
+      />
+      <div
+        className="card mx-1 my-1 text-white bg-dark"
+        style={
+          Object {
+            "maxWidth": 540,
+          }
+        }
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-4"
+          >
+            <img
+              alt="Batman"
+              className="card-img"
+              src="./assets/heroes/dc-batman.jpg"
+            />
+          </div>
+          <div
+            className="col-md-8"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Batman
+              </h5>
+              <p
+                className="card-text"
+              >
+                Bruce Wayne
+              </p>
+              <p
+                className="card-text"
+              >
+                <small
+                  className="text-muted"
+                >
+                  Detective Comics #27
+                </small>
+              </p>
+            </div>
+            <a
+              className="link-light"
+              href="/hero/dc-batman"
+              onClick={[Function]}
+            >
+              Más...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas de SearchScreen Debe renderizar correctamente el componente 1`] = `
+<div>
+  <h1>
+    Search a hero
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find a hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-success btn-block mt-3 w-100"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 d-flex justify-content-center flex-wrap"
+    >
+      <h4
+        className="text-center w-100"
+      >
+        Results
+      </h4>
+      <hr
+        className="w-100"
+      />
+      <div
+        className="alert alert-info w-75"
+      >
+        Search a hero
+      </div>
+    </div>
+  </div>
+</div>
+`;

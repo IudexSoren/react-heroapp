@@ -10,8 +10,6 @@ const PrivateRoute = ({
   // Guardar la última ruta.  La ruta queda almacena aún cuando no está autenticado, en este caso el usuario al autenticarse
   // será redirigido a la página que deseaba
   localStorage.setItem('lastPath', `${ rest.location.pathname }${ rest.location.search }`);
-  console.log(rest);
-  console.log(rest.location.search);
 
   return (
     <Route

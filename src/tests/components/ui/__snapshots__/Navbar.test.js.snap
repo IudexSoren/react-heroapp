@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de Navbar Debe renderizar correctamente el componente y mostrar el nombre del usuario autenticado 1`] = `
+<nav
+  className="navbar navbar-expand-sm navbar-dark bg-dark px-2"
+>
+  <a
+    className="navbar-brand"
+    onClick={[Function]}
+  >
+    Associations
+  </a>
+  <div
+    className="navbar-collapse"
+  >
+    <div
+      className="navbar-nav"
+    >
+      <a
+        aria-current={null}
+        className="nav-item nav-link"
+        onClick={[Function]}
+      >
+        Marvel
+      </a>
+      <a
+        aria-current={null}
+        className="nav-item nav-link"
+        onClick={[Function]}
+      >
+        DC
+      </a>
+      <a
+        aria-current={null}
+        className="nav-item nav-link"
+        onClick={[Function]}
+      >
+        Search🔎
+      </a>
+    </div>
+  </div>
+  <div>
+    <ul
+      className="navbar-nav ml-auto"
+    >
+      <span
+        className="nav-item nav-link text-info"
+      >
+        Aarón
+      </span>
+      <button
+        className="nav-item nav-link btn"
+        onClick={[Function]}
+      >
+        Logout
+      </button>
+    </ul>
+  </div>
+</nav>
+`;
